@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加文章</title>
+</head>
+<body>
+    <form action="{% url 'blog:add_action'%}" method="post">
+        {% csrf_token %}
+        <label>标题<input type="text" name="title"/></label>
+        <label>内容<input type="text" name="conten"/></label>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
