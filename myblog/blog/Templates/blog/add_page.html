@@ -8,7 +8,7 @@
     <form action="{% url 'blog:add_action'%}" method="post">
         {% csrf_token %}
         <label>标题<input type="text" name="title"/></label>
-        <label>内容<input type="text" name="conten"/></label>
+        <label>内容<input type="text" name="content"/></label>
         <input type="submit" value="提交">
     </form>
 </body>
