@@ -7,4 +7,5 @@ urlpatterns = [
     path('edit/<int:article_id>/',views.article_edit,name='article_edit'),
     path('add',views.add_page,name='add_page'),
     path('create',views.create_page,name='add_action'),
+    path('action/<int:article_id>/',views.edit_action,name='edit_action')
 ]
